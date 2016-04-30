@@ -1,0 +1,44 @@
+
+
+<ion-view >
+
+	<ion-nav-title >
+		Latests Blocks
+	</ion-nav-title>
+
+    <ion-content  padding="true" class="page">
+
+            <div class="reload">
+                <div class="color-icon-wrapper blue" ng-click="reloadBlocks()">
+                    <i class="icon ion-refresh" ></i>
+                </div>
+            </div>
+
+
+            <div class='uil-ripple-css' style='transform:scale(0.81);' ng-show="loading"><div></div><div></div></div>
+
+
+            <ion-list ng-show="!loading">
+                <div class="block card" ng-repeat="block in blocksData">
+                    <div class="item item-text-wrap">
+                        <p class="home-block-height"> Block number {{ block.height }} </p>
+
+
+						<div class="go-to-detail" ng-click="goToDetail({{ block.height}})">
+							<div class="color-icon-wrapper blue">
+			                    <i class="icon ion-social-bitcoin" ></i>
+			                </div>
+						</div>
+
+                    </div>
+				</div>
+
+
+
+            </ion-list>
+
+
+
+
+    </ion-content>
+</ion-view>

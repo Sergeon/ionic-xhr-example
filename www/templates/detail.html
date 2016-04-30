@@ -1,0 +1,36 @@
+<ion-view>
+
+	<ion-nav-title>
+		Detail
+	</ion-nav-title>
+
+    <ion-content  padding="true" class="page">
+
+
+
+            <div class="header">
+                <h1>Block Data</h1>
+            </div>
+
+            <div class='uil-ripple-css' style='transform:scale(0.81);' ng-show="loading"><div></div><div></div></div>
+
+        	<div class="block-wrapper" ng-show="!loading">
+
+				<div class="block card center" ng-repeat="(key , value ) in blockData">
+                    <div class="item item-divider">
+					   {{key}}
+				   </div>
+				   <div class="item item-text-wrap">
+					   {{ value }}
+				   </div>
+				</div>
+
+
+
+        	</div>
+
+
+
+
+    </ion-content>
+</ion-view>

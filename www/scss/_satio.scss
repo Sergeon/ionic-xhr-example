@@ -1,0 +1,111 @@
+
+
+/*==================
+        -GENERIC-
+==================*/
+
+    p , div, span , h1, h2, h3 ,a {
+        font-family: 'Roboto';
+    }
+
+    h1 , h2 ,h3 {
+        text-align: center;
+        color : $_black;
+        text-transform: uppercase;
+    }
+
+    .title{
+        text-transform: uppercase;
+    }
+
+    .item{
+        color : white;
+
+        border : 0px solid transparent;
+    }
+
+    .page{
+        background-color : $_yellow;
+    }
+
+
+/*==================
+        -HOME-
+==================*/
+
+p.home-block-height{
+    float : left;
+    color : white;
+    line-height : 50px;
+}
+
+ion-content.scroll-content{
+    padding-top : 30px ;
+}
+
+div.reload{
+    text-align: center;
+}
+
+.color-icon-wrapper{
+
+    background-color: red;
+    color : white;
+
+    border-radius: 50%;
+    width : 50px;
+    height : 50px;
+
+    margin : auto;
+    margin-bottom : 15px;
+    text-align: center;
+
+    i{
+        font-size: 25px;
+        line-height : 50px;
+        margin-left: 3px;
+    }
+}
+
+
+.go-to-detail{
+    float : right;
+    margin-right : 30px;
+}
+
+.color-icon-wrapper.blue{
+    background-color : $_blue;
+}
+
+
+
+.block.card{
+
+    background-color : $_black;
+
+    border-radius : 10px;
+
+
+}
+
+.item-text-wrap{
+    background-color : $_black;
+}
+
+
+
+
+
+/*==================
+    -DETAIL-
+==================*/
+
+.item.item-divider{
+    color : white;
+    background-color: $_blue;
+    text-transform: uppercase;;
+}
+
+.card.center{
+    text-align: center;
+}
